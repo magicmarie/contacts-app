@@ -2,12 +2,14 @@ import Vue from 'vue';
 import App from './App.vue';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Vuelidate from 'vuelidate';
 
 import VueAxios from 'vue-axios';
 import Axios from 'axios';
 import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
+Vue.use(Vuelidate);
 Vue.use(VueAxios, Axios);
 
 Vue.config.productionTip = false;
@@ -15,7 +17,7 @@ Vue.config.productionTip = false;
 import Home from './components/HomeComponent';
 import Edit from './components/EditComponent';
 import Create from './components/CreateComponent';
-import Delete from './components/DeleteComponent';
+import Delete from './components/CreateComponent';
 import Index from './components/IndexComponent';
 
 const routes = [
